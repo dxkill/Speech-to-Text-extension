@@ -4,7 +4,6 @@ const recognition = new webkitSpeechRecognition();
 recognition.continuous = true;
 recognition.interimResults = true;
 recognition.lang = 'en-US';
-recognition.onresult = function (event) {
 
 class SpeechtoText {
 
@@ -56,7 +55,7 @@ class SpeechtoText {
   }
 
   recognized() {
-    return result;
+    return recognition.onresult;
   }
 
 }
