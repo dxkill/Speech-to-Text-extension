@@ -5,10 +5,6 @@ recognition.continuous = true;
 recognition.interimResults = true;
 recognition.lang = 'en-US';
 recognition.onresult = function (event) {
-  let result = '';
-  for (let i = event.resultIndex; i < event.results.length; i++) {
-  result += event.results[i][0].transcript;
-  }
 
 class SpeechtoText {
 
